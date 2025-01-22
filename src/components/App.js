@@ -10,12 +10,12 @@ function App() {
 
   function handleQuestionAnswered(correct) {
     if (currentQuestionId < questions.length) {
-      setCurrentQuestion((currentQuestionId) => currentQuestionId + 1);
+      setCurrentQuestion((currentQuestionId) => currentQuestionId + 1); // Move to the next question
     } else {
-      setCurrentQuestion(null);
+      setCurrentQuestion(null); // End the game
     }
     if (correct) {
-      setScore((score) => score + 1);
+      setScore((score) => score + 1); // Update the score
     }
   }
 
